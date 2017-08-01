@@ -9,12 +9,12 @@ package SuperAdmin;
  *
  * @author Marco Macias
  */
-public class EditarPerfilSuperAdmin extends javax.swing.JPanel {
+public class EditarOrganizador extends javax.swing.JPanel {
 
     /**
-     * Creates new form EditarPerfilSuperAdmin
+     * Creates new form EditarOrganizador
      */
-    public EditarPerfilSuperAdmin() {
+    public EditarOrganizador() {
         initComponents();
     }
 
@@ -34,17 +34,17 @@ public class EditarPerfilSuperAdmin extends javax.swing.JPanel {
         LabelCedula1 = new javax.swing.JLabel();
         LabelUsuario1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        TFApellido1 = new javax.swing.JTextField();
+        ModificarButton1 = new javax.swing.JButton();
         TFNombre1 = new javax.swing.JTextField();
+        TFApellido1 = new javax.swing.JTextField();
         TFCedula1 = new javax.swing.JTextField();
         TFUser1 = new javax.swing.JTextField();
         TFContra1 = new javax.swing.JTextField();
-        ModificarButton1 = new javax.swing.JButton();
 
         AreaTrabajo1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         Titulo2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        Titulo2.setText("Editar Super Administrador");
+        Titulo2.setText("Editar Organizadores");
 
         LabelNombre1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         LabelNombre1.setText("Nombre :");
@@ -75,61 +75,61 @@ public class EditarPerfilSuperAdmin extends javax.swing.JPanel {
             .addGroup(AreaTrabajo1Layout.createSequentialGroup()
                 .addGap(127, 127, 127)
                 .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelNombre1)
-                    .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(ModificarButton1))
+                    .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
                         .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                                .addComponent(LabelApellido1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(LabelCedula1)
-                                        .addComponent(LabelUsuario1)))
-                                .addGap(123, 123, 123)
-                                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TFUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                                        .addGap(35, 35, 35)
-                                        .addComponent(ModificarButton1)))))
-                        .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                            .addGap(212, 212, 212)
-                            .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
+                            .addComponent(LabelApellido1)
+                            .addComponent(jLabel2)
+                            .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(LabelCedula1)
+                                .addComponent(LabelUsuario1))
+                            .addComponent(LabelNombre1))
+                        .addGap(88, 88, 88)
+                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
         AreaTrabajo1Layout.setVerticalGroup(
             AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AreaTrabajo1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
-                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(LabelNombre1)
-                    .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LabelApellido1)
-                    .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LabelCedula1))
+                        .addGap(61, 61, 61)
+                        .addComponent(LabelNombre1)
+                        .addGap(18, 18, 18)
+                        .addComponent(LabelApellido1)
+                        .addGap(18, 18, 18)
+                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                                .addComponent(LabelCedula1)
+                                .addGap(87, 87, 87))
+                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                                .addComponent(LabelUsuario1)
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel2)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaTrabajo1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                        .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(TFUser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
-                        .addComponent(LabelUsuario1)
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addComponent(ModificarButton1)
                 .addGap(27, 27, 27))
         );
@@ -147,12 +147,12 @@ public class EditarPerfilSuperAdmin extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 393, Short.MAX_VALUE)
+            .addGap(0, 408, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(AreaTrabajo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+                    .addComponent(AreaTrabajo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 

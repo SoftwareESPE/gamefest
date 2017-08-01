@@ -27,19 +27,178 @@ public class EditarAdministradores extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        AreaTrabajo1 = new javax.swing.JPanel();
+        Titulo2 = new javax.swing.JLabel();
+        LabelNombre1 = new javax.swing.JLabel();
+        LabelApellido1 = new javax.swing.JLabel();
+        LabelCedula1 = new javax.swing.JLabel();
+        LabelUsuario1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        ModificarButton1 = new javax.swing.JButton();
+        TFNombre1 = new javax.swing.JTextField();
+        TFApellido1 = new javax.swing.JTextField();
+        TFCedula1 = new javax.swing.JTextField();
+        TFUser1 = new javax.swing.JTextField();
+        TFContra1 = new javax.swing.JTextField();
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        AreaTrabajo1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        Titulo2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Titulo2.setText("Editar Administradores");
+
+        LabelNombre1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        LabelNombre1.setText("Nombre :");
+
+        LabelApellido1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        LabelApellido1.setText("Apellido :");
+
+        LabelCedula1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        LabelCedula1.setText("Cedula :");
+
+        LabelUsuario1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        LabelUsuario1.setText("Usuario :");
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel2.setText("Contraseña :");
+
+        ModificarButton1.setText("Modificar");
+        ModificarButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ModificarButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AreaTrabajo1Layout = new javax.swing.GroupLayout(AreaTrabajo1);
+        AreaTrabajo1.setLayout(AreaTrabajo1Layout);
+        AreaTrabajo1Layout.setHorizontalGroup(
+            AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                .addGap(127, 127, 127)
+                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(ModificarButton1))
+                    .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LabelApellido1)
+                            .addComponent(jLabel2)
+                            .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(LabelCedula1)
+                                .addComponent(LabelUsuario1))
+                            .addComponent(LabelNombre1))
+                        .addGap(88, 88, 88)
+                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+        AreaTrabajo1Layout.setVerticalGroup(
+            AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(LabelNombre1)
+                        .addGap(18, 18, 18)
+                        .addComponent(LabelApellido1)
+                        .addGap(18, 18, 18)
+                        .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                                .addComponent(LabelCedula1)
+                                .addGap(87, 87, 87))
+                            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                                .addComponent(LabelUsuario1)
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel2)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaTrabajo1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                        .addComponent(TFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFUser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(TFContra1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
+                .addComponent(ModificarButton1)
+                .addGap(27, 27, 27))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 796, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(AreaTrabajo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 408, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(AreaTrabajo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 412, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void ModificarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModificarButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ModificarButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel AreaTrabajo1;
+    private javax.swing.JLabel LabelApellido1;
+    private javax.swing.JLabel LabelCedula1;
+    private javax.swing.JLabel LabelNombre1;
+    private javax.swing.JLabel LabelUsuario1;
+    private javax.swing.JButton ModificarButton1;
+    private javax.swing.JTextField TFApellido1;
+    private javax.swing.JTextField TFCedula1;
+    private javax.swing.JTextField TFContra1;
+    private javax.swing.JTextField TFNombre1;
+    private javax.swing.JTextField TFUser1;
+    private javax.swing.JLabel Titulo2;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

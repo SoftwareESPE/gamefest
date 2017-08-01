@@ -27,19 +27,110 @@ public class ListaAdministradores extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        AreaTrabajo1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        AgregarButton = new javax.swing.JButton();
+        ModifficarButton = new javax.swing.JButton();
+        EliminarButton = new javax.swing.JButton();
+
+        AreaTrabajo1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setText("Lista de Organizadores ");
+
+        AgregarButton.setText("Agregar");
+
+        ModifficarButton.setText("Modificar");
+        ModifficarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ModifficarButtonActionPerformed(evt);
+            }
+        });
+
+        EliminarButton.setText("Eliminar");
+
+        javax.swing.GroupLayout AreaTrabajo1Layout = new javax.swing.GroupLayout(AreaTrabajo1);
+        AreaTrabajo1.setLayout(AreaTrabajo1Layout);
+        AreaTrabajo1Layout.setHorizontalGroup(
+            AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGap(241, 241, 241)
+                        .addComponent(jLabel1))
+                    .addGroup(AreaTrabajo1Layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(AgregarButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(ModifficarButton)
+                        .addGap(26, 26, 26)
+                        .addComponent(EliminarButton)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaTrabajo1Layout.createSequentialGroup()
+                .addGap(0, 98, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
+        );
+        AreaTrabajo1Layout.setVerticalGroup(
+            AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaTrabajo1Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jLabel1)
+                .addGap(28, 28, 28)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addGroup(AreaTrabajo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AgregarButton)
+                    .addComponent(ModifficarButton)
+                    .addComponent(EliminarButton))
+                .addContainerGap(108, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AreaTrabajo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AreaTrabajo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void ModifficarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModifficarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ModifficarButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AgregarButton;
+    private javax.swing.JPanel AreaTrabajo1;
+    private javax.swing.JButton EliminarButton;
+    private javax.swing.JButton ModifficarButton;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
