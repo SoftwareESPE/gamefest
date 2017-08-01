@@ -9,12 +9,12 @@ package login;
  *
  * @author josue
  */
-public class Plantilla extends javax.swing.JFrame {
+public class SuperAdmin extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
-    public Plantilla() {
+    public SuperAdmin() {
         initComponents();
     }
 
@@ -30,6 +30,12 @@ public class Plantilla extends javax.swing.JFrame {
         Fondo = new javax.swing.JPanel();
         Cabecera = new javax.swing.JPanel();
         Menu = new javax.swing.JPanel();
+        SuperAdminButton = new javax.swing.JToggleButton();
+        AdminButton = new javax.swing.JToggleButton();
+        OrganButton = new javax.swing.JToggleButton();
+        JuegosButton = new javax.swing.JToggleButton();
+        ReportesButton = new javax.swing.JToggleButton();
+        SalirButton = new javax.swing.JButton();
         AreaTrabajo = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,15 +59,62 @@ public class Plantilla extends javax.swing.JFrame {
 
         Menu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        SuperAdminButton.setText("Super Administradores");
+        SuperAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SuperAdminButtonActionPerformed(evt);
+            }
+        });
+
+        AdminButton.setText("Administradores");
+        AdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AdminButtonActionPerformed(evt);
+            }
+        });
+
+        OrganButton.setText("Organizadores");
+        OrganButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OrganButtonActionPerformed(evt);
+            }
+        });
+
+        JuegosButton.setText("Juegos");
+
+        ReportesButton.setText("Reportes");
+
+        SalirButton.setText("Salir");
+
         javax.swing.GroupLayout MenuLayout = new javax.swing.GroupLayout(Menu);
         Menu.setLayout(MenuLayout);
         MenuLayout.setHorizontalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 154, Short.MAX_VALUE)
+            .addComponent(SuperAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(AdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(OrganButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(JuegosButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(ReportesButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(MenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(SalirButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MenuLayout.setVerticalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(MenuLayout.createSequentialGroup()
+                .addComponent(SuperAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(AdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OrganButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JuegosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ReportesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SalirButton)
+                .addContainerGap())
         );
 
         AreaTrabajo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -104,10 +157,22 @@ public class Plantilla extends javax.swing.JFrame {
         );
 
         getContentPane().add(Fondo);
-        Fondo.setBounds(0, 0, 858, 540);
+        Fondo.setBounds(0, 0, 845, 540);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void SuperAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuperAdminButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SuperAdminButtonActionPerformed
+
+    private void AdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AdminButtonActionPerformed
+
+    private void OrganButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OrganButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,21 +191,27 @@ public class Plantilla extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Plantilla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuperAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Plantilla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuperAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Plantilla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuperAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Plantilla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuperAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Plantilla().setVisible(true);
+                new SuperAdmin().setVisible(true);
             }
         });
         
@@ -148,11 +219,15 @@ public class Plantilla extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton AdminButton;
     private javax.swing.JPanel AreaTrabajo;
     private javax.swing.JPanel Cabecera;
     private javax.swing.JPanel Fondo;
+    private javax.swing.JToggleButton JuegosButton;
     private javax.swing.JPanel Menu;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JToggleButton OrganButton;
+    private javax.swing.JToggleButton ReportesButton;
+    private javax.swing.JButton SalirButton;
+    private javax.swing.JToggleButton SuperAdminButton;
     // End of variables declaration//GEN-END:variables
 }
