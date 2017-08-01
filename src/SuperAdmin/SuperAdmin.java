@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package login;
+package SuperAdmin;
 
 /**
  *
@@ -157,7 +157,7 @@ public class SuperAdmin extends javax.swing.JFrame {
         );
 
         getContentPane().add(Fondo);
-        Fondo.setBounds(0, 0, 845, 540);
+        Fondo.setBounds(0, 0, 0, 540);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
